@@ -1,48 +1,38 @@
 # Parallel File Encryption / Decryption Manager
 
 ## Team Members
-- Aqsa Rehman  
 - Faria Fatima  
+- Aqsa Rehman  
 - Muhammad Hasnat Fakhar  
 
----
+## Project Overview
+This project is a **parallel file encryption and decryption manager** developed as part of an **Operating Systems course**. The application is designed to process **multiple files concurrently** using a **dynamic thread pool**, improving performance while ensuring data integrity through proper synchronization mechanisms.
 
-## About the Project
-This project is a **multithreaded file encryption and decryption system** developed as part of an
-**Operating Systems course**. It processes multiple files concurrently using a **dynamic thread pool**
-to improve performance while ensuring correctness through proper synchronization.
+The system is implemented in **C++ on a Linux environment (WSL)** and provides both a **GTK-based graphical user interface** and a **command-line interface**, demonstrating real-world application of core operating system concepts in concurrent systems.
 
-The system is implemented in **C++** on **Linux (WSL)** and provides both a **GTK-based GUI**
-and a **console-based version**, demonstrating real-world usage of core OS concepts.
-
----
-
-## Operating System Concepts Used
-- Multithreading (`std::thread`)
-- Thread Pool design
-- Producer–Consumer problem
-- Mutex locks (mutual exclusion)
+## Operating System Concepts Implemented
+- Multithreading using `std::thread`
+- Thread pool architecture
+- Producer–Consumer synchronization model
+- Mutex locks for mutual exclusion
 - Counting semaphores
-- Shared memory (POSIX `shm_open`, `mmap`)
+- Shared memory using POSIX (`shm_open`, `mmap`)
 - Atomic operations
-- Race condition prevention
-- Deadlock and starvation avoidance
-- Graceful thread termination
-
----
+- Race condition avoidance
+- Deadlock and starvation prevention
+- Clean and graceful termination of threads
 
 ## Technologies Used
 - C++
-- POSIX threads & semaphores
-- GTK (GUI)
-- Linux / WSL
+- POSIX threads and semaphores
+- GTK for graphical user interface
+- Linux / Windows Subsystem for Linux (WSL)
 
----
-
-## How to Build and Run
+## Build and Execution Instructions
 
 ### Build the Project
 ```bash
+make
 make.
 
 Run GUI Version
