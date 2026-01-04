@@ -1,56 +1,52 @@
-Parallel File Encryption / Decryption Manager
-Team Members
+# Parallel File Encryption / Decryption Manager
 
-Faria Fatima
+## Team Members
+- Aqsa Rehman  
+- Faria Fatima  
+- Muhammad Hasnat Fakhar  
 
-Aqsa Rehman
+---
 
-Muhammad Hasnat Fakhar
+## About the Project
+This project is a **multithreaded file encryption and decryption system** developed as part of an
+**Operating Systems course**. It processes multiple files concurrently using a **dynamic thread pool**
+to improve performance while ensuring correctness through proper synchronization.
 
-Project Overview
+The system is implemented in **C++** on **Linux (WSL)** and provides both a **GTK-based GUI**
+and a **console-based version**, demonstrating real-world usage of core OS concepts.
 
-This project is a parallel file encryption and decryption manager developed as part of an Operating Systems course. The application is designed to handle multiple files simultaneously by leveraging a dynamic thread pool, thereby enhancing performance while maintaining data integrity through robust synchronization mechanisms.
+---
 
-The system is implemented in C++ on a Linux environment (WSL) and includes both a GTK-based graphical user interface and a command-line interface, offering a practical demonstration of how fundamental operating system concepts are applied in real-world concurrent applications.
+## Operating System Concepts Used
+- Multithreading (`std::thread`)
+- Thread Pool design
+- Producer–Consumer problem
+- Mutex locks (mutual exclusion)
+- Counting semaphores
+- Shared memory (POSIX `shm_open`, `mmap`)
+- Atomic operations
+- Race condition prevention
+- Deadlock and starvation avoidance
+- Graceful thread termination
 
-Operating System Concepts Implemented
+---
 
-Multithreading using std::thread
+## Technologies Used
+- C++
+- POSIX threads & semaphores
+- GTK (GUI)
+- Linux / WSL
 
-Thread pool architecture
+---
 
-Producer–Consumer synchronization model
+## How to Build and Run
 
-Mutex locks for mutual exclusion
+### Build the Project
+```bash
+make.
 
-Counting semaphores
-
-Shared memory using POSIX (shm_open, mmap)
-
-Atomic operations
-
-Race condition avoidance
-
-Deadlock and starvation prevention
-
-Clean and graceful termination of threads
-
-Technologies Used
-
-C++
-
-POSIX threads and semaphores
-
-GTK for graphical user interface
-
-Linux / Windows Subsystem for Linux (WSL)
-
-Build and Execution Instructions
-Build the Project
-make
-
-Run the GUI Version
+Run GUI Version
 ./encrypt_decrypt_gui
 
-Run the Console Version
+Run Console Version
 ./encrypt_decrypt
