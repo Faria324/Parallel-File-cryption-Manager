@@ -33,8 +33,6 @@ The system is implemented in **C++ on a Linux environment (WSL)** and provides b
 ### Build the Project
 ```bash
 make
-make.
-
 Run GUI Version
 ./encrypt_decrypt_gui
 
